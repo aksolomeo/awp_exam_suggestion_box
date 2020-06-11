@@ -1,0 +1,37 @@
+.register {
+    height: 80vh;
+}
+
+.register__input-wrapper {
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    width: 300px;
+}
+
+
+.register__input {
+    height: 22px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    width: 80%;
+}
+
+.register__button {
+    height: 28px;
+    font-size: 18px;
+}
+
+.register__back-arrow {
+    font-size: 34px;
+    color: black;
+    unerline: none;
+    text-decoration: inherit;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}

@@ -1,0 +1,17 @@
+.post-signature__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.post-signature__input {
+    height: 22px;
+    font-size: 18px;
+    margin-right: 12px;
+    width: 36%;
+}
+
+.post-signature__button {
+    height: 28px;
+    font-size: 18px;
+}

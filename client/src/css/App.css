@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.error {
+    font-size: 16px;
+    color: red;
+}
+
+
+h1 {
+    text-transform: uppercase;
+}

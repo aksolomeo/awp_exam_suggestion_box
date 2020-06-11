@@ -1,0 +1,29 @@
+.suggestion__back-arrow {
+    font-size: 28px;
+    color: black;
+    unerline: none;
+    text-decoration: inherit;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    left: 28px;
+}
+
+.suggestion__signature-list {
+    padding: 0;
+}
+
+.suggestion__signature-first-item {
+    margin-bottom: 16px;
+}
+
+.suggestion__signature-item {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.suggestion__h1 {
+    margin: 0px 0px 30px;
+}

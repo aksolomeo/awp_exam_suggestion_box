@@ -1,0 +1,30 @@
+.main-page__h1 {
+    font-size: 32px;
+    margin: 0px 0px 30px;
+}
+
+.main-page__ul {
+    list-style:none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-page__li {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.main-page__li-first-item {
+    margin-bottom: 16px;
+}
+
+.main-page__link {
+    text-decoration: none;
+}
+
+.main-page__link:hover {
+    color: crimson;
+}
+

@@ -1,0 +1,16 @@
+.navbar__link-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding:  20px 0;
+}
+
+.navbar__text {
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.navbar__link:hover {
+    cursor: pointer;
+    color: crimson;
+}

@@ -1,0 +1,17 @@
+.post-suggestion__input-wrapper {
+    align-items: stretch;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.post-suggestion__input {
+    height: 22px;
+    font-size: 18px;
+    margin-right: 12px;
+    width: 36%;
+}
+
+.post-suggestion__button {
+    height: 28px;
+    font-size: 18px;
+}
