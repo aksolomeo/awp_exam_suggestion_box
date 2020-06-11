@@ -91,7 +91,7 @@ app.get('*', (req, res) =>
 );
 
 const port = process.env.PORT || 8080;
-const url = process.env.MONGO_URL || 'mongodb://localhost/awp_exam_suggestion_box';
+const url = process.env.MONGO_URL || 'mongodb://localhost/awp_exam_suggestion_box_test';
 
 app.listen(port, async () => {
 
@@ -128,6 +128,29 @@ app.listen(port, async () => {
     Suggestion = mongoose.model('Suggestion', suggestionSchema);
     Signature = mongoose.model('Signature', signatureSchema);
     User = mongoose.model('User', userSchema);
+
+    // Test data
+    const allUsers = await User.find({});
+
+    if(allUsers.length === 0){
+        new User({ username: "nirvana", fullName: "Nirvana Ribic", password: "nirvana123" }).save();
+        new User({ username: "luka", fullName: "Luka Kumic", password: "luka123" }).save();
+
+        let suggestion1 = await new Suggestion({ name: "Do the cold showers every day.", creatorFullName: "Nirvana Ribic" });
+        let suggestion2 = await new Suggestion({ name: "Run around Brabrand lake.", creatorFullName: "Luka Kumic" });
+
+        let signature1 = await new Signature({ name: "Nirvana Ribic", date: new Date( Date.now() - 1000 * 60 ) });
+        let signature2 = await new Signature({ name: "Luka Kumic", date: new Date( Date.now() - 500 * 60 ) });
+
+        await signature1.save();
+        await signature2.save();
+
+        suggestion1.signatures.push(signature1);
+        suggestion2.signatures.push(signature2);
+
+        await suggestion1.save();
+        await suggestion2.save();
+    }
 
     console.log("Database connected:", mongoose.connection.name);
 
